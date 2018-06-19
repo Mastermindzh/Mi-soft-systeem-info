@@ -1,0 +1,887 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mi-SoftSysteemInformatie
+</name>
+</assembly>
+<members>
+<member name="M:Mi_Soft_System_Information.Besturingssysteem.CreateInstance">
+	<summary>
+ Create a global instance of this panel
+ </summary>&gt;
+
+</member><member name="P:Mi_Soft_System_Information.InstalledProgram.DisplayName">
+	<summary>
+ The name that would be displayed in Add/Remove Programs
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InstalledProgram.Version">
+	<summary>
+ The version of the program
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InstalledProgram.ParentDisplayName">
+	<summary>
+ If this program is an update then this will contain the display name of the product that 
+ this is an update to
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InstalledProgram.IsUpdate">
+	<summary>
+ Is this program classed as an update 
+ </summary>
+</member><member name="M:Mi_Soft_System_Information.InstalledProgram.GetInstalledPrograms(System.Boolean)">
+	<summary>
+ Retrieves a list of all installed programs on the local computer
+ </summary>
+</member><member name="M:Mi_Soft_System_Information.InstalledProgram.GetInstalledPrograms(System.String,System.Boolean)">
+	<summary>
+ Retrieves a list of all installed programs on the specified computer
+ </summary>
+	<param name="ComputerName">The name of the computer to get the list of installed programs from</param>
+	<param name="IncludeUpdates">Determines whether or not updates for installed programs are included in the list</param>
+</member><member name="T:Mi_Soft_System_Information.InstalledProgram">
+	<summary>
+ Represents a program that is installed on a PC
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Mi_Soft_System_Information.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Mi_Soft_System_Information.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Mi_Soft_System_Information.ShortcutClass.#ctor(System.String)">
+	<summary>
+ linkPath: Path to new or existing shortcut file (.lnk).
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.ShortcutClass.Arguments">
+	<summary>
+ Gets the argument list of the shortcut.
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.ShortcutClass.Comment">
+	<summary>
+ Gets a the shortcut comment.
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.ShortcutClass.WorkingDirectory">
+	<summary>
+ Gets the working directory of the shortcut.
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.ShortcutClass.Path">
+	<summary>
+ Gets the target path of the shortcut.
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.ShortcutClass.IconLocation">
+	<summary>
+ Gets the path of the Icon assigned to the shortcut.
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.ShortcutClass.IconIndex">
+	<summary>
+ Gets the index of the Icon assigned to the shortcut.
+ </summary>
+	<remarks>
+ Set to zero when the IconLocation property specifies a .ICO file.
+ </remarks>
+</member><member name="P:Mi_Soft_System_Information.ShortcutClass.Icon">
+	<summary>
+ Retrieves the Icon of the shortcut as it will appear in Explorer.
+ Use the IconPath and IconIndex properties to change it.
+ </summary>
+</member><member name="T:Mi_Soft_System_Information.SLGP_FLAGS">
+	<suumary>
+ IShellLink.GetPath fFlags
+ </suumary>
+</member><member name="M:Mi_Soft_System_Information.installedsoftware.ListViewPrograms_ColumnClick(System.Object,System.Windows.Forms.ColumnClickEventArgs)">
+	<summary>
+ Set the ListViewItemSorter property to a new ListViewItemComparer 
+ object. Setting this property immediately sorts the 
+ ListView using the ListViewItemComparer object.
+ </summary>
+</member><member name="M:Mi_Soft_System_Information.installedsoftware.AddIcon(System.Drawing.Icon)">
+	<summary>
+ Adds a icon to both image lists.
+ </summary>
+	<param name="newIcon">Icon to be added.</param>
+</member><member name="M:Mi_Soft_System_Information.installedsoftware.AddBlankIcon">
+	<summary>
+ Adds a blank icon to both image lists.
+ </summary>
+</member><member name="M:Mi_Soft_System_Information.installedsoftware.SearchFolder(System.String,System.String,System.Boolean)">
+	<summary>
+ Search folder using search pattern. If icon is found, it is added to both image lists.
+ </summary>
+	<param name="folder">Folder to be searched.</param>
+	<param name="searchPattern">Matching pattern</param>
+	<param name="searchSubDirs">If true, subdirectories are also searched.</param>
+	<returns>Return true if icon is found.</returns>
+</member><member name="M:Mi_Soft_System_Information.Opstart_programma_s.ListViewStartup_ColumnClick(System.Object,System.Windows.Forms.ColumnClickEventArgs)">
+	<summary>
+ Set the ListViewItemSorter property to a new ListViewItemComparer 
+ object. Setting this property immediately sorts the 
+ ListView using the ListViewItemComparer object.
+ </summary>
+</member><member name="M:Mi_Soft_System_Information.InformationClass.Initialize(Mi_Soft_System_Information.InformationClass.Initializers)">
+	<summary>
+ Initialize according to property setting.
+ </summary>
+</member><member name="M:Mi_Soft_System_Information.InformationClass.GetFrameworkVersion">
+	<summary>
+ Queries the Registry and returns the highest .NET Framework version found or 0 if none is found.
+ </summary>
+	<returns>A double indicating the major and minor version of the .NET Framework.</returns>
+	<remarks>
+ This code is confirmed for versions 1.1, 2.0, 3.0 and 3.5. Later versions are simply educated guesses.
+ Hopefully beginning with version 3.5, Microsoft will assign the versioning task away from the
+ marketing department and this mess will not be necessary.
+ </remarks>
+</member><member name="M:Mi_Soft_System_Information.InformationClass.GetOSProductKey">
+	<summary>
+ Read the value of:
+ HKLM\SOFTWARE\MICROSOFT\Windows NT\CurrentVersion\DigitalProductId
+ and decode the Windows CD Key.
+ </summary>
+	<returns>
+ Returns the Windows CD Key if successful.
+ Returns "Unknown" upon failure.
+ </returns>
+</member><member name="M:Mi_Soft_System_Information.InformationClass.GetWeekNumber(System.DateTime)">
+	<summary>
+ Description:this function will accept any date as the only parameter and will 
+ return you the week number the supplied date lies into.
+ </summary>&gt;
+ <param name="inDate">Date for which the week number is desired.</param>
+	<returns>
+ Return the week number as an integer.
+ </returns>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppBuild">
+	<summary>
+ Application Build
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppCompanyName">
+	<summary>
+ Application Company (Manufacturer)
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppCopyright">
+	<summary>
+ Application Copyright
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppDescription">
+	<summary>
+ Application Copyright
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppMajorRevision">
+	<summary>
+ Application Major Revision
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppMajorVersion">
+	<summary>
+ Application Major Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppMinorRevision">
+	<summary>
+ Application Minor Revision
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppMinorVersion">
+	<summary>
+ Application Minor Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppProductName">
+	<summary>
+ Application Product Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppRevision">
+	<summary>
+ Application Revision
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppShortVersion">
+	<summary>
+ Application Major and Minor Version Separated by a Decimal
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppTitle">
+	<summary>
+ Application Title
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppTrademark">
+	<summary>
+ Application Trademark
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppVersion">
+	<summary>
+ Application Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.AppDirectory">
+	<summary>
+ Application Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.BiosManufacturer">
+	<summary>
+ BIOS Manufacturer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.BiosName">
+	<summary>
+ BIOS Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.BiosVersion">
+	<summary>
+ BIOS Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.BiosReleaseDate">
+	<summary>
+ BIOS Release Date
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.BiosFeatures">
+	<summary>
+ BIOS Features
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.BiosSMBiosPresent">
+	<summary>
+ SMBIOS Present
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.BiosSMBiosVersion">
+	<summary>
+ SMBIOS Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CDDrive">
+	<summary>
+ CD Drive
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CDManufacturer">
+	<summary>
+ CD Drive Manufacturer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CDModel">
+	<summary>
+ CD Drive Model
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CDMediaSize">
+	<summary>
+ CD Drive Media Size
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CDRevisionLevel">
+	<summary>
+ CD Drive Revision Level
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CDStatus">
+	<summary>
+ CD Drive Status
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CompAutomaticResetCapability">
+	<summary>
+ Computer Has Automatic Reset Capability
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CompDescription">
+	<summary>
+ Computer Description
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CompManufacturer">
+	<summary>
+ Computer Manufacturer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CompModel">
+	<summary>
+ Computer Model
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CompSystemType">
+	<summary>
+ Computer System Type
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuNumberOfProcessors">
+	<summary>
+ Number of Processors
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuNumberOfCores">
+	<summary>
+ Number of Cores
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuNumberOfLogicalProcessors">
+	<summary>
+ Number of Logical Processors
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuAddressWidth">
+	<summary>
+ CPU Address Width
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuDescription">
+	<summary>
+ CPU Description
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuFsbSpeed">
+	<summary>
+ CPU Front Side Bus (FSB) Speed
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuL2CacheSize">
+	<summary>
+ CPU Level 2 Cache Size
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuL2CacheSpeed">
+	<summary>
+ CPU Level 2 Cache Speed
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuLoadPercentage">
+	<summary>
+ CPU Load Percentage
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuManufacturer">
+	<summary>
+ CPU Manufacturer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuName">
+	<summary>
+ CPU Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuSocket">
+	<summary>
+ CPU Socket
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuSpeed">
+	<summary>
+ CPU Speed
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuPowerManagementSupported">
+	<summary>
+ CPU Power Management Supported
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuPowerManagementCapabilities">
+	<summary>
+ CPU Power Management Capabilities
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.CpuProcessorId">
+	<summary>
+ CPU Processor ID
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.DriveCapacity">
+	<summary>
+ Drive Capacity
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.DriveInterface">
+	<summary>
+ Drive Interface
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.DriveModelNo">
+	<summary>
+ Drive Model Number
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.MainBoardManufacturer">
+	<summary>
+ Mainboard (or Chipset) Manufacturer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.MainBoardModel">
+	<summary>
+ Mainboard (or Chipset) Model
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.MemAvailVirtual">
+	<summary>
+ Available Virtual Memory
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.MemAvailPhysical">
+	<summary>
+ Available Physical Memory
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.MemTotalVirtual">
+	<summary>
+ Total Virtual Memory
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.MemTotalPhysical">
+	<summary>
+ Total Physical Memory
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ClrVersion">
+	<summary>
+ CLR Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ClrMajorVersion">
+	<summary>
+ CLR Major Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.FrameworkMinorVersion">
+	<summary>
+ .NET Framwork Minor Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ClrServicePack">
+	<summary>
+ CLR Service Pack
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ClrShortVersion">
+	<summary>
+ CLR Major and Minor Version Separated by a Decimal
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetFrameworkVersion">
+	<summary>
+ .NET Framework Major and Minor Version Separated by a Decimal
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetAdapterType">
+	<summary>
+ Network Interface Type
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetAutoSense">
+	<summary>
+ Network Interface Auto Sense Capability
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetMacAddress">
+	<summary>
+ Network Interface Media Access Control (MAC) Address
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetManufacturer">
+	<summary>
+ Network Interface Manufacturer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetMaxSpeed">
+	<summary>
+ Network Interface Maximum Speed
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetConnectionId">
+	<summary>
+ Network Interface Connection ID
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetConnectionStatus">
+	<summary>
+ Network Interface Connection Status
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetIPEnabled">
+	<summary>
+ Network Interface Internet Protocol (IP) Enabled Status
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetNumberOfAdapters">
+	<summary>
+ Number of Network Interfaces
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetProductName">
+	<summary>
+ Network Interface Product Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetSpeed">
+	<summary>
+ Network Interface Speed
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetDefaultTtl">
+	<summary>
+ Network Interface Default Time-To-Live (TTL)
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetDhcpEnabled">
+	<summary>
+ Network Interface Dynamic Host Configuration Protocol (DHCP) Enabled Status
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetDhcpLeaseObtained">
+	<summary>
+ Date Network Interface Dynamic Host Configuration Protocol (DHCP) Lease Obtained
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetDhcpLeaseExpires">
+	<summary>
+ Network Interface Date Network Interface Dynamic Host Configuration Protocol (DHCP) Lease Expires
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetDhcpServer">
+	<summary>
+ Network Interface Date Network Interface Dynamic Host Configuration Protocol (DHCP) Server
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetMtu">
+	<summary>
+ Network Interface Maximum Transmission Unit (MTU)
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetTcpNumConnections">
+	<summary>
+ Number of Network Interface Transmission Control Protocol (TCP) Connections
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetTcpWindowSize">
+	<summary>
+ Network Interface Transmission Control Protocol (TCP) Window Size
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetIPAddress">
+	<summary>
+ Network Interface Internet Protocol (IP) Address
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetDomain">
+	<summary>
+ Network Interface Network Domain
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.NetHostName">
+	<summary>
+ Network Interface Network Host Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSCodename">
+	<summary>
+ Operating System Code Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSBuild">
+	<summary>
+ Build
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSMachineName">
+	<summary>
+ Machine Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSVersion">
+	<summary>
+ Operating System Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSFullName">
+	<summary>
+ Operating System Full Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSPlatform">
+	<summary>
+ Operating System Platform
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSMinorVersion">
+	<summary>
+ Operating System Minor Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSMajorVersion">
+	<summary>
+ Operating System Major Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSServicePack">
+	<summary>
+ Operating System Service Pack
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSUserName">
+	<summary>
+ Logon User Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSProductKey">
+	<summary>
+ OS Product Key
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSProductId">
+	<summary>
+ Microsoft's Numeric Product ID
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSType">
+	<summary>
+ Type of build, ie. checked/free and single/multi processor
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSShortVersion">
+	<summary>
+ Operating System Major and Minor Version Separated by a Decimal
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSUptime">
+	<summary>
+ Formatted Time Since Last Start
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSStartTime">
+	<summary>
+ Date/Time of Last System Start as Date
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSBootupState">
+	<summary>
+ Operating System Bootup State
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSDomain">
+	<summary>
+ Operating System Domain
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSPartOfDomain">
+	<summary>
+ Operating System Part of Domain
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSInstallDate">
+	<summary>
+ Operating System Installation Date
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.OSIs64Bit">
+	<summary>
+ Returns True if Operating System 64-Bit Version Installed.
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ServiceDisplayName">
+	<summary>
+ Display Name for service
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ServiceDescription">
+	<summary>
+ Description of service
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ServiceStartMode">
+	<summary>
+ Start mode of service
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ServiceState">
+	<summary>
+ State of service
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ServiceStatus">
+	<summary>
+ Status of Service
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.ServicePathName">
+	<summary>
+ Path name for service
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.SndController">
+	<summary>
+ Sound Controller Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.SndManufacturer">
+	<summary>
+ Sound Controller Manufacturer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.SndDmaBufferSize">
+	<summary>
+ Sound Controller DMA Buffer Size
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.SndNumberOfControllers">
+	<summary>
+ Number of Sound Controllers
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeCurrentTimeZone">
+	<summary>
+ Current Time Zone
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeDaylightSavingsInEffect">
+	<summary>
+ Daylight Savings in Effect
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeDaylightSavingsName">
+	<summary>
+ Daylight Savings Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeDaylightSavingsOffset">
+	<summary>
+ Daylight Savings Offset
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeLocalDaylightEndDate">
+	<summary>
+ (Date) Local Daylight Saving End Date
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeLocalDaylightEndTime">
+	<summary>
+ (Date) Local Daylight Saving End Time
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeLocalDaylightStartDate">
+	<summary>
+ (Date) Local Daylight Saving Start Date
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeLocalDaylightStartTime">
+	<summary>
+ (Date) Local Daylight Saving Start Time
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeLocalDateTime">
+	<summary>
+ (Date) Local Date and Time
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeUniversalDateTime">
+	<summary>
+ (Date) Universal Date and Time
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeUniversalDaylightEndDate">
+	<summary>
+ (Date) Universal Daylight Saving End Date
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeUniversalDaylightEndTime">
+	<summary>
+ (Date) Universal Daylight Saving End Time
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeUniversalDaylightStartDate">
+	<summary>
+ (Date) Universal Daylight Saving Start Date
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeUniversalDaylightStartTime">
+	<summary>
+ (Date) Universal Daylight Saving Start Time
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.TimeUniversalTimeOffset">
+	<summary>
+ Universal Time Offset
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserIsAdministrator">
+	<summary>
+ Administrator Status of Current User
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserRegisteredName">
+	<summary>
+ Registered Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserRegisteredOrganization">
+	<summary>
+ Registered Organization
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserRegisteredNameWow6432Node">
+	<summary>
+ Registered User (Wow6432Node)
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserRegisteredOrganizationWow6432Node">
+	<summary>
+ Registered Organization (Wow6432Node)
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserFlags">
+	<summary>
+ User Account Flags
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserAccounts">
+	<summary>
+ Collection of User Accounts on This Computer
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserFullName">
+	<summary>
+ User Full Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.UserPrivilege">
+	<summary>
+ User Privilege
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VidController">
+	<summary>
+ Installed Video Controllers
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VidPrimaryScreenDimensions">
+	<summary>
+ Primary Screen Dimensions
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VidPrimaryScreenWorkingArea">
+	<summary>
+ Primary Screen Working Area
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VidNumberOfControllers">
+	<summary>
+ Number of Video Controllers
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VidRam">
+	<summary>
+ Video Controllers RAM
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VidRefreshRate">
+	<summary>
+ Video Controllers Refresh Rate
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VidScreenColors">
+	<summary>
+ Video Controllers Colors
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstAuthor">
+	<summary>
+ Visual Style Author
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstColorScheme">
+	<summary>
+ Visual Style ColorScheme
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstCompany">
+	<summary>
+ Visual Style Company
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstControlHighlightHot">
+	<summary>
+ (Drawing.Color) Visual Style Control Highlight Hot
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstCopyright">
+	<summary>
+ Visual Style Copyright
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstDescription">
+	<summary>
+ Visual Style Description
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstDisplayName">
+	<summary>
+ Visual Style Display Name
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstIsEnabledByUser">
+	<summary>
+ Visual Style Enabled by User
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstIsSupportedByOS">
+	<summary>
+ Visual Style Supported by Operating System
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstMinimumColorDepth">
+	<summary>
+ Visual Style Minimum Color Depth
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstSize">
+	<summary>
+ Visual Style Size
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstSupportsFlatMenus">
+	<summary>
+ Visual Style Supports Flat Menus
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstTextControlBorder">
+	<summary>
+ (Drawing.Color) Visual Style Text Control Border
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstUrl">
+	<summary>
+ Visual Style URL
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VstVersion">
+	<summary>
+ Visual Style Version
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeLetter">
+	<summary>
+ Volume Letters
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeType">
+	<summary>
+ Volume Types
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeFileSystem">
+	<summary>
+ Volume File Systems
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeReady">
+	<summary>
+ Volume Ready Status
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeLabel">
+	<summary>
+ Volume Label
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeTotalSize">
+	<summary>
+ Volume Total Size
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeFreeSpace">
+	<summary>
+ Volume Free Space
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeUsedSpace">
+	<summary>
+ Volume Used Space
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumePercentFreeSpace">
+	<summary>
+ Volume Percent Free Space
+ </summary>
+</member><member name="P:Mi_Soft_System_Information.InformationClass.VolumeSerialNumber">
+	<summary>
+ Volume Serial Number
+ </summary>
+</member><member name="M:Mi_Soft_System_Information.NativeMethods.GetVolumeSerialNumber(System.String)">
+	<summary>
+ Returns hexadecimal volume serial number.
+ </summary>
+	<param name="volume">volume "drive letter"</param>
+</member><member name="M:Mi_Soft_System_Information.NativeMethods.GetIcon(System.String)">
+	<summary>
+ Return first icon for an executible file.
+ </summary>
+	<remarks>
+ This overload does not require an icon index to be specified.
+ </remarks>
+</member><member name="M:Mi_Soft_System_Information.NativeMethods.GetIcon(System.String,System.Int32)">
+	<summary>
+ Return specified icon for an executible file.
+ </summary>
+	<remarks>
+ This overload requires an icon index to be specified.
+ </remarks>
+</member><member name="M:Mi_Soft_System_Information.Processes.CreateInstance">
+	<summary>
+ Create a global instance of this panel
+ </summary>&gt;
+
+</member><member name="M:Mi_Soft_System_Information.Processes.ListViewProcesses_ColumnClick(System.Object,System.Windows.Forms.ColumnClickEventArgs)">
+	<summary>
+ Set the ListViewItemSorter property to a new ListViewItemComparer 
+ object. Setting this property immediately sorts the 
+ ListView using the ListViewItemComparer object.
+ </summary>
+</member>
+</members>
+</doc>

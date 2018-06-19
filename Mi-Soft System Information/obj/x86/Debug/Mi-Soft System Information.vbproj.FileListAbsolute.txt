@@ -1,0 +1,45 @@
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\bin\Debug\Mi-Soft System Information.exe
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\bin\Debug\Mi-Soft System Information.pdb
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\bin\Debug\Mi-Soft System Information.xml
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.About.resources
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Form1.resources
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Resources.resources
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\Mi-Soft System Information.exe
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\Mi-Soft System Information.xml
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\Mi-Soft System Information.pdb
+C:\Users\Mi-Soft.nl\AppData\Local\Temporary Projects\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Meer_info.resources
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi-Soft System Information.exe
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi-Soft System Information.xml
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi-Soft System Information.pdb
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\bin\Debug\Mi-Soft System Information.exe
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\bin\Debug\Mi-Soft System Information.pdb
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\bin\Debug\Mi-Soft System Information.xml
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.About.resources
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Form1.resources
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Meer_info.resources
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Resources.resources
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.OSinformation.resources
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Mi-Soft.nl\Desktop\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\ResGen.write.1.tlog
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\bin\Debug\Mi-Soft Systeem Informatie.exe
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\bin\Debug\Mi-Soft Systeem Informatie.pdb
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\bin\Debug\Mi-Soft Systeem Informatie.xml
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\ResolveAssemblyReference.cache
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.About.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Form1.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Meer_info.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Resources.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Besturingssysteem.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Bios.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.netwerk.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.Systeem_overzicht.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi_Soft_System_Information.waitform.resources
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\ResGen.read.1.tlog
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\ResGen.write.1.tlog
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi-Soft Systeem Informatie.exe
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi-Soft Systeem Informatie.xml
+\\server\Rick\000 - Mi-soft\00-Mi-soft coding\009 - Mi-Soft system information\Mi-Soft System Information\Mi-Soft System Information\obj\x86\Debug\Mi-Soft Systeem Informatie.pdb
